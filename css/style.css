@@ -1,0 +1,438 @@
+/* @charset "UTF-8";
+
+html {
+    font-size: 100%;
+  }
+  body {
+    color: #24292e;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  li {
+    list-style: none;
+  }
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+  } */
+  @charset "UTF-8";
+html {
+	overflow-y: scroll;
+}
+/* リセットCSSの記述です。コピペしていただいて構いません。----- */
+
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+/* ここから */
+  
+ 
+/* ヘッダー */
+#header {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(148, 148, 148, 0.26);
+    height: 90px;
+    margin: 0 0;
+    padding: 0 4%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* ヘッダーのコンテンツ置く場所 */
+#header ul {
+    display: flex;
+}
+
+#header h1{
+    margin-left: 80px;
+
+}
+#header li {
+    font-size: 0.9rem;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+#header img.icon{
+    width: 20px;
+} 
+#header li a:hover{
+    opacity: 0.8;
+}
+.sm li {
+  display: none;
+}
+
+/*mainpic*/
+#mainpic {
+    margin-bottom: 80px;
+}
+
+#mainpic img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+  /* profile */
+#profile h2{
+    margin: 30px;
+}
+
+#profile.box{
+    position: relative;
+}
+#profile img{
+    width: 180px;
+    position: absolute;
+    left: 100px;
+    margin: 10px 20px 10px 0px;
+    border-radius: 90px;
+    filter: grayscale(100%);
+}
+#profile ul {
+    text-align: left;
+    margin:50px 50px 50px 330px;
+    
+}
+
+#profile li{
+  line-height: 2;
+}
+
+/*works*/
+#works h2{
+  margin: 30px;
+}
+
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+}
+
+#works img {
+  width: 400px;
+  height: 260px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  /* margin-bottom: 50px; */
+}
+
+#works li {
+   margin-bottom: 23px;
+   filter: grayscale(100%);
+}
+
+.sec-works {
+   margin-top: 50px;
+}
+
+/*access*/
+#access h2{
+  margin: 30px;
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*contact*/
+  #contact dl {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  #contact dt {
+    width: 15%;
+}
+  #contact dd {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+  #contact dd input,
+  #contact dd textarea {
+    width: 65%;
+    border: solid 1px #c8c8c8;
+    padding: 10px;
+  }
+  #contact dd textarea {
+    height: 10rem;
+  }
+  #contact .button {
+    text-align: center;
+  }
+  #contact .button input {
+    width: 200px;
+    background-color: #24292e;
+    color: #fff;
+    padding: 15px 0;
+    border: solid 1px #24292e;
+  }
+  #contact .button input:hover {
+    background: #fff;
+    color: #24292e;
+  }
+=======
+/*contact*/
+#contact h2{
+   margin: 30px;
+}
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+  text-align: right;
+}
+#contact dd {
+  width: 75%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 65%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+>>>>>>> d9cab19a3024ecd0eecff88563c887cba31726c8
+  
+.sec-contact {
+  margin-top: 50px;
+  }
+
+#footer{
+  background-color: rgba(148, 148, 148, 0.26);
+  margin-top: 30px;
+  height: 60px;
+  line-height: 60px;
+}
+
+/* source-code 共通*/
+.source-code {
+  margin: 30px 0;
+}
+.source-code label {
+  padding: 5px;
+  font-weight: blod;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+.source-code label:hover {
+  background-color: grey;
+}
+
+.source-code input {
+  display: none;
+}
+
+.memo {
+  font-size: 13px;
+}
+
+/* source-code 個別設定0~5 */
+.source-code .hidden_show0 {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:  0.8s;
+}
+
+.source-code input:checked~ .hidden_show0 {
+  padding: 20px 0;
+  height: auto;
+  opacity: 1;
+}
+
+.source-code .hidden_show1 {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:  0.8s;
+}
+
+.source-code input:checked~ .hidden_show1 {
+  padding: 20px 0;
+  height: auto;
+  opacity: 1;
+}
+
+.source-code .hidden_show2 {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:  0.8s;
+}
+
+.source-code input:checked~ .hidden_show2 {
+  padding: 20px 0;
+  height: auto;
+  opacity: 1;
+}
+
+.source-code .hidden_show3 {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:  0.8s;
+}
+
+.source-code input:checked~ .hidden_show3 {
+  padding: 20px 0;
+  height: auto;
+  opacity: 1;
+}
+
+.source-code .hidden_show4 {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:  0.8s;
+}
+
+.source-code input:checked~ .hidden_show4 {
+  padding: 20px 0;
+  height: auto;
+  opacity: 1;
+}
+
+.source-code .hidden_show5 {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:  0.8s;
+}
+
+.source-code input:checked~ .hidden_show5 {
+  padding: 20px 0;
+  height: auto;
+  opacity: 1;
+}
+
+/* Quiz */
+section h2{
+  margin: 30px;
+}
+
+#Quiz p {
+  padding-top: 100px;
+}
+
+#Quiz input[type="radio"] {
+  font-size: 30px;
+}
+
+.question ,.point {
+  line-height: 50px;
+  font-size: 20px;
+}
+
+

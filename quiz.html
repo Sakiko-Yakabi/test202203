@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!-- header&main -->
+    <header id="header">
+        <h1>YOSUKE ITOMURA</h1>
+
+        <!-- 🍔 -->
+        <div id="hamburger">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="sm">
+            <ul>
+                <li><a href="index.html #mainpic">TOP</a></li>
+                <li><a href="index.html #profile">Profile</a></li>
+                <li><a href="index.html #works">Works</a></li>
+                <li><a href="index.html #access">Access</a></li>
+                <li><a href="index.html #contact">Contact</a></li>      
+                <li><a href="#Quiz">Quiz</a></li>      
+                <li>
+                    <a href="https://twitter.com/yoskmr" target="_blank">
+                        <img class="icon" src="img/2021 Twitter logo - black.png" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 🍔 -->
+
+        <nav class="pc">
+        <ul>
+            <li><a href="https://810man.github.io/maincode/#mainpic">TOP</a></li>
+            <li><a href="https://810man.github.io/maincode/#profile">Profile</a></li>
+            <li><a href="https://810man.github.io/maincode/#works">Works</a></li>
+            <li><a href="https://810man.github.io/maincode/#access">Access</a></li>
+            <li><a href="https://810man.github.io/maincode/#contact">Contact</a></li>      
+            <li><a href="#Quiz">Quiz</a></li>      
+            <li>
+                <a href="https://twitter.com/yoskmr" target="_blank">
+                    <img class="icon" src="img/2021 Twitter logo - black.png" alt="twitter">
+                </a>
+            </li>
+        </ul>
+        </nav>
+
+        <!-- クイズ -->
+        <script type="text/javascript">
+            <!--
+            function saiten(){
+                var point=0;	//点数
+                var max=100;	//満点
+            
+                if(document.quiz.a[1].checked){point+=10;}
+                if(document.quiz.b[1].checked){point+=10;}
+                if(document.quiz.c[1].checked){point+=10;}
+                if(document.quiz.d[2].checked){point+=10;}
+                if(document.quiz.e[1].checked){point+=10;}
+                if(document.quiz.f[0].checked){point+=10;}
+                if(document.quiz.g[0].checked){point+=10;}
+                if(document.quiz.h[2].checked){point+=10;}
+                if(document.quiz.i[1].checked){point+=10;}
+                if(document.quiz.j[1].checked){point+=10;}
+            
+                if(point==max){
+                    alert(""+max+"点です。\nおめでとうございます。満点です。\n秘密のページにご招待。");
+                    location.href="itomura.html";
+                }
+                else{alert(""+point+"点です。\n残念。またチャレンジしてね。");
+                    location.href="itomura2.html";
+                }
+                
+            
+                //チェックを初期状態に戻します
+                //いらなきゃ削除してもOK
+                document.quiz.a[0].checked=true;
+                document.quiz.b[0].checked=true;
+                document.quiz.c[0].checked=true;
+                document.quiz.d[0].checked=true;
+                document.quiz.e[0].checked=true;
+                document.quiz.f[0].checked=true;
+                document.quiz.g[0].checked=true;
+                document.quiz.h[0].checked=true;
+                document.quiz.i[0].checked=true;
+                document.quiz.j[0].checked=true;
+            }
+            //-->
+            </script>
+    </header>
+<!-- 🍔jQuery -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $('#hamburger').on('click',function() {
+            $('.icon').toggleClass('close');
+            $('.sm li').slideToggle();
+        });
+    </script>
+<!-- 🍔jQuery -->
+
+    
+    <main>
+      <div id="mainpic" class="wrapper">
+        <img src="img/DSC_0074 (1).JPG" alt="糸村さん">
+      </div>
+
+    </main>
+
+    <section id ="Quiz">
+      <h2>Quiz</h2>
+      <form name="quiz">
+
+        <p class="question">Q1 文字の色を変えるcssが反映されるのは？
+            <br><input type="radio" name="a" checked>上に書いた方
+            <input type="radio" name="a">下に書いた方
+            <input type="radio" name="a">真ん中
+        </p>
+
+        <p class="question">Q2 htmlはプログラミング言語である？
+            <br><input type="radio" name="b" checked>イェーイ
+            <input type="radio" name="b">no
+            <input type="radio" name="b">どちらともいえない
+        </p>
+
+        <p class="question">Q3 どのブラウザでも自分の書いたcssが適用されるために書くものは？
+            <br><input type="radio" name="c" checked>メリットcss
+            <input type="radio" name="c">リセットcss
+            <input type="radio" name="c">テンプレートcss
+        </p>
+
+        <p class="question">Q4 classは一つのhtmlファイルで何回使える？
+            <br><input type="radio" name="d" checked>3回までだよ
+            <input type="radio" name="d">1回だけよ
+            <input type="radio" name="d">何回まででも使えるさ
+        </p>
+
+        <p class="question">Q5 WEBディレクションで重要なものは？
+            <br><input type="radio" name="e" checked>条件定義
+            <input type="radio" name="e">要件定義
+            <input type="radio" name="e">ワイヤーフレーム
+        </p>
+
+        <p class="question">Q6 デザインとは？
+            <br><input type="radio" name="f" checked>機能＆技術
+            <input type="radio" name="f">UI＆センス
+            <input type="radio" name="f">発想＆技術
+        </p>
+
+        <p class="question">Q7 ベースカラー：メインカラー：アクセントカラーの比率で理想的なのは？
+            <br><input type="radio" name="g" checked>7:2.5:0.5
+            <input type="radio" name="g">6:3:1
+            <input type="radio" name="g">0.5:2.5:7
+        </p>
+
+        <p class="question">Q8 四つの基本機能クラッドとは？
+            <br><input type="radio" name="h" checked>CLUD
+            <input type="radio" name="h">KROD
+            <input type="radio" name="h">CRUD
+        </p>
+
+        <p class="question">Q9 コードを書く上での心得でSUNABACO的に最も大切なのは？
+            <br><input type="radio" name="i" checked>誰もが見やすいコードじゃ
+            <input type="radio" name="i">動くコードじゃ
+            <input type="radio" name="i">すっきりスマートなコードじゃ
+        </p>
+
+        <p class="question">Q10 SUNABACO的プログラミングとは？
+            <br><input type="radio" name="j" checked>自己実現の為の必須能力
+            <input type="radio" name="j">誰かの困りごとを解決する為の有効な選択肢
+            <input type="radio" name="j">かっこいいプログラマー
+        </p>
+        
+        <p class="point"><input type="button" value=" 採点 " onclick="saiten()"></p> 
+
+      </form>
+
+    </section>
+
+    <footer id="footer">
+        <p> &copy; 2022 YOSUKE ITOMURA </p>
+    </footer>
+
+</body>
+</html>

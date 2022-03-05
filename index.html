@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+
+<body>
+    <!-- header&main -->
+    <header id="header">
+        <h1>YOSUKE ITOMURA</h1>
+
+        <!-- 🍔 -->
+        <div id="hamburger">
+            <div class="icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="sm">
+            <ul>
+                <li><a href="#mainpic">TOP</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#access">Access</a></li>
+                <li><a href="#contact">Contact</a></li>      
+                <li><a href="quiz.html">Quiz</a></li>      
+                <li>
+                    <a href="https://twitter.com/yoskmr" target="_blank">
+                        <img class="icon" src="img/2021 Twitter logo - black.png" alt="twitter">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 🍔 -->
+
+        <nav class="pc">
+        <ul>
+            <li><a href="#mainpic">TOP</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#contact">Contact</a></li>      
+            <li><a href="quiz.html">Quiz</a></li>      
+            <li>
+                <a href="https://twitter.com/yoskmr" target="_blank">
+                    <img class="icon" src="img/2021 Twitter logo - black.png" alt="twitter">
+                </a>
+            </li>
+        </ul>
+        </nav>
+
+
+    </header>
+<!-- 🍔jQuery -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $('#hamburger').on('click',function() {
+            $('.icon').toggleClass('close');
+            $('.sm li').slideToggle();
+        });
+    </script>
+<!-- 🍔jQuery -->
+
+    
+    <main>
+      <div id="mainpic" class="wrapper">
+        <img src="img/itomurasan7.webp" alt="糸村さん">
+      </div>
+
+
+    <!-- header&mainpic-code -->
+    <div class="source-code">
+        <label for="label0">header&main画像のソースコード</label>
+        <input type="checkbox" id="label0">
+        <div class="hidden_show0">
+            <p class="memo">倍率ボタンを押してresult表示サイズを調整ください</p>
+            <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="gOXjyrN" data-user="snk7791" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/snk7791/pen/gOXjyrN">
+                卒mainvisual-code</a> by snk7791 (<a href="https://codepen.io/snk7791">@snk7791</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </div>
+
+
+    
+    <!-- profile -->
+      <section id="profile" class="wrapper">
+        <h2 class="sec-title">Profile</h2>
+        <div class="box"> 
+         <img src="./img/イトムラプロフィール.jpg" alt="profile画像">
+        </div>
+        <ul>
+          <li>name: Yosuke Itomura</li>
+          <li>birth: 1900/06/28</li>
+          <li>from: okinawa</li>
+          <li>tel: 000-0000-0000</li>
+          <li>twitter: <a href="https://twitter.com/yoskmr" target="_blank">@yoskmr</a></li>
+          <p>
+            地方中心にプログラミングスクールを展開し、地域と利用者と一緒になって成長するコミュニティ
+            #SUNABACO・#ハナハナワークス
+          </p>
+        </ul>
+
+      </section>
+
+      <!-- profile-code -->
+      <div class="source-code">
+        <label for="label1">Profileのソースコード</label>
+        <input type="checkbox" id="label1">
+        <div class="hidden_show1">
+            <p class="memo">倍率ボタンを押してresult表示サイズを調整ください</p>
+            <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="xxPJedz" data-user="snk7791" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/snk7791/pen/xxPJedz">
+                卒profile-code</a> by snk7791 (<a href="https://codepen.io/snk7791">@snk7791</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </div>
+    
+      <!-- works -->
+      <section id="works" class="wrapper">
+        <h2 class="sec-works">Works</h2>
+        <ul>
+            <li><img src="img/上段左.JPG" alt="テキスト"></li>
+            <li><img src="img/上段真中.JPG" alt="テキスト"></li>
+            <li><img src="img/上段右.JPG" alt="テキスト"></li>
+            <li><img src="img/下段左.JPG" alt="テキスト"></li>
+            <li><img src="img/下段真中.JPG" alt="テキスト"></li>
+            <li><img src="img/下段右.JPG" alt="テキスト"></li>
+        </ul>
+      </section>
+        
+        <!-- works-code -->
+      <div class="source-code">
+            <label for="label2">Worksのソースコード</label>
+            <input type="checkbox" id="label2">
+            <div class="hidden_show2">
+                <p class="memo">倍率ボタンを押してresult表示サイズを調整ください</p>
+                <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="gOXjyXO" data-user="snk7791" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/snk7791/pen/gOXjyXO">
+                    卒works-code</a> by snk7791 (<a href="https://codepen.io/snk7791">@snk7791</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+      </div>
+
+      
+
+        <!-- access -->
+        <section id="access" class="wrapper">
+            <h2 class="sec-title">Access</h2>
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.692957339036!2d127.79743391435247!3d26.33644009100133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5120dde509437%3A0xe05c1333222a51e6!2z44CSOTA0LTAwMDQg5rKW57iE55yM5rKW57iE5biC5Lit5aSu77yR5LiB55uu77yR77yU4oiS77yT!5e0!3m2!1sja!2sjp!4v1646023584252!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </section>
+
+        <!-- access-code -->
+        <div class="source-code">
+            <label for="label3">Accessのソースコード</label>
+            <input type="checkbox" id="label3">
+            <div class="hidden_show3">
+                <p class="memo">倍率ボタンを押してresult表示サイズを調整ください</p>
+                <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="RwjqbOa" data-user="snk7791" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/snk7791/pen/RwjqbOa">
+                    卒Access-code</a> by snk7791 (<a href="https://codepen.io/snk7791">@snk7791</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> 
+            </div>
+        </div>
+
+        <!-- contact -->
+        <section id="contact" class="wrapper">
+            <h2 class="sec-contact">Contact</h2>
+            <form action="#" method="post">
+                <dl>
+                    <dt><label for="name">NAME</label></dt></br>
+                    <dd><input type="text" id="name" name="your-name" placeholder="このフォームは見本です"></dd></br>
+                    <dt><label for="message">MESSAGE</label></dt></br>
+                    <dd><textarea id="message" name="your-message" placeholder="このフォームは見本です"></textarea></dd></br>
+                </dl>
+                <div class="button"><input type="submit" value="送信"></div>
+
+            </form>
+
+        </section>
+
+        <!-- contact-code -->
+        <div class="source-code">
+            <label for="label4">Contactのソースコード</label>
+            <input type="checkbox" id="label4">
+            <div class="hidden_show4">
+                <p class="memo">倍率ボタンを押してresult表示サイズを調整ください</p>
+                <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="yLPqrrp" data-user="snk7791" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/snk7791/pen/yLPqrrp">
+                    卒contact-code</a> by snk7791 (<a href="https://codepen.io/snk7791">@snk7791</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+        </div>
+
+
+    
+    </main>
+
+
+    <footer id="footer">
+        <p> &copy; 2022 YOSUKE ITOMURA </p>
+    </footer>
+
+    <!-- footer-code -->
+    <div class="source-code">
+        <label for="label5">footerのソースコード</label>
+        <input type="checkbox" id="label5">
+        <div class="hidden_show5">
+            <p class="memo">倍率ボタンを押してresult表示サイズを調整ください</p>
+            <p class="codepen" data-height="400" data-default-tab="css,result" data-slug-hash="VwrBNGJ" data-user="snk7791" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/snk7791/pen/VwrBNGJ">
+                卒news-code</a> by snk7791 (<a href="https://codepen.io/snk7791">@snk7791</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+    </div>
+
+</body>
+</html>
